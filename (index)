@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <title>Curve Fever Pro - 2021</title>
+    <meta name="description"
+        content="The smash hit Curve Fever is back with a new multiplayer browser game: Curve Fever Pro. Cut off opponents, squeeze through tiny holes and unlock new powers.">
+    <meta name="keywords"
+        content="curve fever, curve fever pro, browser game, io game, snake, multiplayer, free game, free browser game, online game, play with friends, fun game, achtung die kurve">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo-512x512.png">
+
+    <!-- Preload fonts -->
+    <link rel="preload" href="/assets/fonts/asap-bold-webfont.woff2" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/asap-medium-webfont.woff2" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/asap-regular-webfont.woff2" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/asap-semibold-webfont.woff2" as="font" crossorigin>
+
+    <meta property="og:title" content="Curve Fever Pro - 2021" />
+    <meta property="og:image"
+        content="https://forum.curvefever.pro/uploads/default/original/2X/b/b1678361f37000be788a216c9679031032d79a36.png" />
+    <meta property="og:description"
+        content="The smash hit Curve Fever is back with a new multiplayer browser game: Curve Fever Pro. Cut off opponents, squeeze through tiny holes and unlock new powers.">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="application-name" content="Curve Fever">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="msapplication-starturl" content="/">
+    <meta name="theme-color" content="#112d45">
+    <meta name="msapplication-TileColor" content="#112d45">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.debug('SW registered:', registration);
+                }).catch(registrationError => {
+                    console.warn('SW registration failed:', registrationError);
+                });
+            });
+        }
+    </script>
+
+    <script>
+        // If it's in iframe
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+
+        const isOnPlaySubdomain = document.location.hostname === 'play.curvefever.pro';
+        if (!inIframe() && isOnPlaySubdomain) {
+            window.location.replace("https://curvefever.pro");
+        }
+
+        if (isOnPlaySubdomain) {
+            // Games distribution
+            window["GD_OPTIONS"] = {
+                "gameId": "501fe88a1d434c79a63628ce84d6c737",
+                "onEvent": function (event) {
+                    switch (event.name) {
+                        case "SDK_GAME_START":
+                        case "SDK_ERROR":
+                        case "AD_ERROR":
+                            // advertisement done, resume game logic and unmute audio
+                            window['fsaRef'] && window['fsaRef'].hide();
+                            break;
+                        case "SDK_GAME_PAUSE":
+                            // pause game logic / mute audio
+                            window['fsaRef'] && window['fsaRef'].show();
+                            break;
+                        case "SDK_GDPR_TRACKING":
+                            // this event is triggered when your user doesn't want to be tracked
+                            break;
+                        case "SDK_GDPR_TARGETING":
+                            // this event is triggered when your user doesn't want personalised targeting of ads and such
+                            break;
+                    }
+                },
+            };
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://html5.api.gamedistribution.com/main.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'gamedistribution-jssdk'));
+        } else {
+            // AdinPlay
+            var aiptag = aiptag || {};
+            aiptag.cmd = aiptag.cmd || [];
+            aiptag.cmd.player = aiptag.cmd.player || [];
+            // Show GDPR consent tool
+            aiptag.gdprShowConsentTool = true;
+            aiptag.gdprConsentToolPosition = "bottom";
+            aiptag.gdprShowConsentToolButton = false;
+            
+
+            (function (d, s) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                js = d.createElement(s);
+                js.src = '//api.adinplay.com/libs/aiptag/pub/CRF/curvefever.pro/tag.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, 'script');
+        }
+    </script>
+<link href="/cf.77da8a647f150cf4a1fe.css" rel="stylesheet"><script async src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script></head>
+
+<body style="background: linear-gradient(to right, #0c0f1d 0%, #00232f 100%);">
+    <noscript>
+        <h1 style="color: white">You need to enable JavaScript to run this app.</h1>
+    </noscript>
+
+    <div id="app" class="loader"></div>
+    <img src='/assets/cfpro-logo.svg' class='loader-image' />
+
+    <div class='orientation-warning' id='orientation-warning' style='display: none'>
+        <div class='content'>
+            <div class='message'>
+                The game should be played in landscape mode.</br>
+                <span class='instructions'>Please flip your device.</span>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/cfpro.77da8a647f150cf4a1fe.js"></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6a36f5b7c93dcefc',m:'kJexWsBT5.nHNeoMkCYjtgI9iQysaOP6zFkzAg5vdm8-1635117879-0-AQ5coA3T8J7FWbVk+umCuQ1gdXgqCh5KFbVxhPYvKLAjt+N2dZAhpnbF7xnXbjdixVDfCrUH7ezRtzxOYVJXNceCncK6cmIlnxmSE2fGGCUKqjAjA/THb/tIXO/xSK/EYA==',s:[0x99fa0feb09,0x2a986d07bb],u:'/cdn-cgi/challenge-platform/h/b'}})();</script></body>
+
+</html>
