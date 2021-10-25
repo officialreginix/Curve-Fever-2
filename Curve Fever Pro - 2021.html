@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://curvefever.pro/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <title>Curve Fever Pro - 2021</title>
+    <meta name="description" content="The smash hit Curve Fever is back with a new multiplayer browser game: Curve Fever Pro. Cut off opponents, squeeze through tiny holes and unlock new powers.">
+    <meta name="keywords" content="curve fever, curve fever pro, browser game, io game, snake, multiplayer, free game, free browser game, online game, play with friends, fun game, achtung die kurve">
+
+    <link rel="shortcut icon" href="https://curvefever.pro/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://curvefever.pro/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://curvefever.pro/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://curvefever.pro/logo-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://curvefever.pro/logo-512x512.png">
+
+    <!-- Preload fonts -->
+    <link rel="preload" href="https://curvefever.pro/assets/fonts/asap-bold-webfont.woff2" as="font" crossorigin="">
+    <link rel="preload" href="https://curvefever.pro/assets/fonts/asap-medium-webfont.woff2" as="font" crossorigin="">
+    <link rel="preload" href="https://curvefever.pro/assets/fonts/asap-regular-webfont.woff2" as="font" crossorigin="">
+    <link rel="preload" href="https://curvefever.pro/assets/fonts/asap-semibold-webfont.woff2" as="font" crossorigin="">
+
+    <meta property="og:title" content="Curve Fever Pro - 2021">
+    <meta property="og:image" content="https://forum.curvefever.pro/uploads/default/original/2X/b/b1678361f37000be788a216c9679031032d79a36.png">
+    <meta property="og:description" content="The smash hit Curve Fever is back with a new multiplayer browser game: Curve Fever Pro. Cut off opponents, squeeze through tiny holes and unlock new powers.">
+
+    <link rel="manifest" href="https://curvefever.pro/manifest.json">
+
+    <meta name="application-name" content="Curve Fever">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="theme-color" content="#112d45">
+    <meta name="msapplication-TileColor" content="#112d45">
+
+    <script type="text/javascript" async="" src="./Curve Fever Pro - 2021_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-ZjjsZZeLRk73AP2KU+bNcMQpmHPr8zQewzqvhVFA/9vdEzGKSWg1CmTxIstEzz7M"></script><script async="" type="text/javascript" src="./Curve Fever Pro - 2021_files/adsbygoogle.js.download"></script><script async="" src="./Curve Fever Pro - 2021_files/analytics.js.download"></script><script src="./Curve Fever Pro - 2021_files/tag.min.js.download"></script><script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.debug('SW registered:', registration);
+                }).catch(registrationError => {
+                    console.warn('SW registration failed:', registrationError);
+                });
+            });
+        }
+    </script>
+
+    <script>
+        // If it's in iframe
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+
+        const isOnPlaySubdomain = document.location.hostname === 'play.curvefever.pro';
+        if (!inIframe() && isOnPlaySubdomain) {
+            window.location.replace("https://curvefever.pro");
+        }
+
+        if (isOnPlaySubdomain) {
+            // Games distribution
+            window["GD_OPTIONS"] = {
+                "gameId": "501fe88a1d434c79a63628ce84d6c737",
+                "onEvent": function (event) {
+                    switch (event.name) {
+                        case "SDK_GAME_START":
+                        case "SDK_ERROR":
+                        case "AD_ERROR":
+                            // advertisement done, resume game logic and unmute audio
+                            window['fsaRef'] && window['fsaRef'].hide();
+                            break;
+                        case "SDK_GAME_PAUSE":
+                            // pause game logic / mute audio
+                            window['fsaRef'] && window['fsaRef'].show();
+                            break;
+                        case "SDK_GDPR_TRACKING":
+                            // this event is triggered when your user doesn't want to be tracked
+                            break;
+                        case "SDK_GDPR_TARGETING":
+                            // this event is triggered when your user doesn't want personalised targeting of ads and such
+                            break;
+                    }
+                },
+            };
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://html5.api.gamedistribution.com/main.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'gamedistribution-jssdk'));
+        } else {
+            // AdinPlay
+            var aiptag = aiptag || {};
+            aiptag.cmd = aiptag.cmd || [];
+            aiptag.cmd.player = aiptag.cmd.player || [];
+            // Show GDPR consent tool
+            aiptag.gdprShowConsentTool = true;
+            aiptag.gdprConsentToolPosition = "bottom";
+            aiptag.gdprShowConsentToolButton = false;
+            
+
+            (function (d, s) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                js = d.createElement(s);
+                js.src = '//api.adinplay.com/libs/aiptag/pub/CRF/curvefever.pro/tag.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, 'script');
+        }
+    </script>
+<link href="./Curve Fever Pro - 2021_files/cf.58e55c5add2ee486d44a.css" rel="stylesheet"><script async="" src="./Curve Fever Pro - 2021_files/invisible.js.download"></script><style type="text/css">.ReactCrop {
+  position: relative;
+  display: inline-block;
+  cursor: crosshair;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #000; }
+  .ReactCrop:focus {
+    outline: none; }
+  .ReactCrop--disabled, .ReactCrop--locked {
+    cursor: inherit; }
+  .ReactCrop__image {
+    display: block;
+    max-width: 100%;
+    touch-action: manipulation; }
+  .ReactCrop--crop-invisible .ReactCrop__image {
+    opacity: 0.5; }
+  .ReactCrop__crop-selection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    box-sizing: border-box;
+    cursor: move;
+    box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.5);
+    touch-action: manipulation;
+    border: 1px solid;
+    border-image-source: url("data:image/gif;base64,R0lGODlhCgAKAJECAAAAAP///////wAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEI5RDc5MTFDNkE2MTFFM0JCMDZEODI2QTI4MzJBOTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEI5RDc5MTBDNkE2MTFFM0JCMDZEODI2QTI4MzJBOTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuZGlkOjAyODAxMTc0MDcyMDY4MTE4MDgzQzNDMjA5MzREQ0ZDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAyODAxMTc0MDcyMDY4MTE4MDgzQzNDMjA5MzREQ0ZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEBQoAAgAsAAAAAAoACgAAAhWEERkn7W3ei7KlagMWF/dKgYeyGAUAIfkEBQoAAgAsAAAAAAoACgAAAg+UYwLJ7RnQm7QmsCyVKhUAIfkEBQoAAgAsAAAAAAoACgAAAhCUYgLJHdiinNSAVfOEKoUCACH5BAUKAAIALAAAAAAKAAoAAAIRVISAdusPo3RAzYtjaMIaUQAAIfkEBQoAAgAsAAAAAAoACgAAAg+MDiem7Q8bSLFaG5il6xQAIfkEBQoAAgAsAAAAAAoACgAAAg+UYRLJ7QnQm7SmsCyVKhUAIfkEBQoAAgAsAAAAAAoACgAAAhCUYBLJDdiinNSEVfOEKoECACH5BAUKAAIALAAAAAAKAAoAAAIRFISBdusPo3RBzYsjaMIaUQAAOw==");
+    border-image-slice: 1;
+    border-image-repeat: repeat; }
+    .ReactCrop--disabled .ReactCrop__crop-selection {
+      cursor: inherit; }
+    .ReactCrop--circular-crop .ReactCrop__crop-selection {
+      border-radius: 50%;
+      box-shadow: 0px 0px 1px 1px white, 0 0 0 9999em rgba(0, 0, 0, 0.5); }
+  .ReactCrop__rule-of-thirds-vt::before, .ReactCrop__rule-of-thirds-vt::after, .ReactCrop__rule-of-thirds-hz::before, .ReactCrop__rule-of-thirds-hz::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .ReactCrop__rule-of-thirds-vt::before, .ReactCrop__rule-of-thirds-vt::after {
+    width: 1px;
+    height: 100%; }
+  .ReactCrop__rule-of-thirds-vt::before {
+    left: 33.3333%;
+    left: calc(100% / 3); }
+  .ReactCrop__rule-of-thirds-vt::after {
+    left: 66.6666%;
+    left: calc(100% / 3 * 2); }
+  .ReactCrop__rule-of-thirds-hz::before, .ReactCrop__rule-of-thirds-hz::after {
+    width: 100%;
+    height: 1px; }
+  .ReactCrop__rule-of-thirds-hz::before {
+    top: 33.3333%;
+    top: calc(100% / 3); }
+  .ReactCrop__rule-of-thirds-hz::after {
+    top: 66.6666%;
+    top: calc(100% / 3 * 2); }
+  .ReactCrop__drag-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    outline: 1px solid transparent; }
+  .ReactCrop .ord-nw {
+    top: 0;
+    left: 0;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: nw-resize; }
+  .ReactCrop .ord-n {
+    top: 0;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: n-resize; }
+  .ReactCrop .ord-ne {
+    top: 0;
+    right: 0;
+    margin-top: -5px;
+    margin-right: -5px;
+    cursor: ne-resize; }
+  .ReactCrop .ord-e {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    margin-right: -5px;
+    cursor: e-resize; }
+  .ReactCrop .ord-se {
+    bottom: 0;
+    right: 0;
+    margin-bottom: -5px;
+    margin-right: -5px;
+    cursor: se-resize; }
+  .ReactCrop .ord-s {
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    cursor: s-resize; }
+  .ReactCrop .ord-sw {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    cursor: sw-resize; }
+  .ReactCrop .ord-w {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: w-resize; }
+  .ReactCrop__disabled .ReactCrop__drag-handle {
+    cursor: inherit; }
+  .ReactCrop__drag-bar {
+    position: absolute; }
+    .ReactCrop__drag-bar.ord-n {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      margin-top: -3px; }
+    .ReactCrop__drag-bar.ord-e {
+      right: 0;
+      top: 0;
+      width: 6px;
+      height: 100%;
+      margin-right: -3px; }
+    .ReactCrop__drag-bar.ord-s {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      margin-bottom: -3px; }
+    .ReactCrop__drag-bar.ord-w {
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      margin-left: -3px; }
+  .ReactCrop--new-crop .ReactCrop__drag-bar,
+  .ReactCrop--new-crop .ReactCrop__drag-handle,
+  .ReactCrop--fixed-aspect .ReactCrop__drag-bar {
+    display: none; }
+  .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-n,
+  .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-e,
+  .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-s,
+  .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-w {
+    display: none; }
+  @media (pointer: coarse) {
+    .ReactCrop__drag-handle {
+      width: 20px;
+      height: 20px; }
+    .ReactCrop .ord-nw {
+      margin-top: -10px;
+      margin-left: -10px; }
+    .ReactCrop .ord-n {
+      margin-top: -10px;
+      margin-left: -10px; }
+    .ReactCrop .ord-ne {
+      margin-top: -10px;
+      margin-right: -10px; }
+    .ReactCrop .ord-e {
+      margin-top: -10px;
+      margin-right: -10px; }
+    .ReactCrop .ord-se {
+      margin-bottom: -10px;
+      margin-right: -10px; }
+    .ReactCrop .ord-s {
+      margin-bottom: -10px;
+      margin-left: -10px; }
+    .ReactCrop .ord-sw {
+      margin-bottom: -10px;
+      margin-left: -10px; }
+    .ReactCrop .ord-w {
+      margin-top: -10px;
+      margin-left: -10px; }
+    .ReactCrop__drag-bar.ord-n {
+      height: 16px;
+      margin-top: -8px; }
+    .ReactCrop__drag-bar.ord-e {
+      width: 16px;
+      margin-right: -8px; }
+    .ReactCrop__drag-bar.ord-s {
+      height: 16px;
+      margin-bottom: -8px; }
+    .ReactCrop__drag-bar.ord-w {
+      width: 16px;
+      margin-left: -8px; } }
+</style><style type="text/css">.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  margin-left: -8px;
+  position: absolute;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  box-sizing: content-box;
+  position: absolute;
+  border: 8px solid transparent;
+  height: 0;
+  width: 1px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  content: "";
+  z-index: -1;
+  border-width: 8px;
+  left: -8px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  top: 0;
+  margin-top: -8px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  border-top: none;
+  border-bottom-color: #f0f0f0;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  top: -1px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  bottom: 0;
+  margin-bottom: -8px;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  border-bottom: none;
+  border-top-color: #fff;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  bottom: -1px;
+  border-top-color: #aeaeae;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+}
+
+.react-datepicker {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.react-datepicker--time-only .react-datepicker__triangle {
+  left: 35px;
+}
+
+.react-datepicker--time-only .react-datepicker__time-container {
+  border-left: 0;
+}
+
+.react-datepicker--time-only .react-datepicker__time {
+  border-radius: 0.3rem;
+}
+
+.react-datepicker--time-only .react-datepicker__time-box {
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__triangle {
+  position: absolute;
+  left: 50px;
+}
+
+.react-datepicker-popper {
+  z-index: 1;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] {
+  margin-top: 10px;
+}
+
+.react-datepicker-popper[data-placement^="top"] {
+  margin-bottom: 10px;
+}
+
+.react-datepicker-popper[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.react-datepicker-popper[data-placement^="right"] .react-datepicker__triangle {
+  left: auto;
+  right: 42px;
+}
+
+.react-datepicker-popper[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.react-datepicker-popper[data-placement^="left"] .react-datepicker__triangle {
+  left: 42px;
+  right: auto;
+}
+
+.react-datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  padding-top: 8px;
+  position: relative;
+}
+
+.react-datepicker__header--time {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.react-datepicker__year-dropdown-container--select,
+.react-datepicker__month-dropdown-container--select,
+.react-datepicker__month-year-dropdown-container--select,
+.react-datepicker__year-dropdown-container--scroll,
+.react-datepicker__month-dropdown-container--scroll,
+.react-datepicker__month-year-dropdown-container--scroll {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.944rem;
+}
+
+.react-datepicker-time__header {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation {
+  background: none;
+  line-height: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 0;
+  padding: 0;
+  border: 0.45rem solid transparent;
+  z-index: 1;
+}
+
+.react-datepicker__navigation--previous {
+  left: 10px;
+  border-right-color: #ccc;
+}
+
+.react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--previous--disabled, .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--next {
+  right: 10px;
+  border-left-color: #ccc;
+}
+
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: 80px;
+}
+
+.react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--next--disabled, .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--years {
+  position: relative;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__navigation--years-previous {
+  top: 4px;
+  border-top-color: #ccc;
+}
+
+.react-datepicker__navigation--years-previous:hover {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--years-upcoming {
+  top: -4px;
+  border-bottom-color: #ccc;
+}
+
+.react-datepicker__navigation--years-upcoming:hover {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__month-container {
+  float: left;
+}
+
+.react-datepicker__month {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__time-container {
+  float: right;
+  border-left: 1px solid #aeaeae;
+  width: 70px;
+}
+
+.react-datepicker__time-container--with-today-button {
+  display: inline;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  position: absolute;
+  right: -72px;
+  top: 0;
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  position: relative;
+  background: white;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 70px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+  list-style: none;
+  margin: 0;
+  height: calc(195px + (1.7rem / 2));
+  overflow-y: scroll;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  padding: 5px 10px;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+  background-color: #216ba5;
+  color: white;
+  font-weight: bold;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
+  color: #ccc;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__week-number {
+  color: #ccc;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable {
+  cursor: pointer;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  white-space: nowrap;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #000;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__day {
+  cursor: pointer;
+}
+
+.react-datepicker__day:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day--today {
+  font-weight: bold;
+}
+
+.react-datepicker__day--highlighted {
+  border-radius: 0.3rem;
+  background-color: #3dcc4a;
+  color: #fff;
+}
+
+.react-datepicker__day--highlighted:hover {
+  background-color: #32be3f;
+}
+
+.react-datepicker__day--highlighted-custom-1 {
+  color: magenta;
+}
+
+.react-datepicker__day--highlighted-custom-2 {
+  color: green;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--keyboard-selected {
+  border-radius: 0.3rem;
+  background-color: #2a87d0;
+  color: #fff;
+}
+
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range) {
+  background-color: rgba(33, 107, 165, 0.5);
+}
+
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range) {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.react-datepicker__day--disabled {
+  cursor: default;
+  color: #ccc;
+}
+
+.react-datepicker__day--disabled:hover {
+  background-color: transparent;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__year-read-view:hover,
+.react-datepicker__month-read-view:hover,
+.react-datepicker__month-year-read-view:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-top-color: #ccc;
+  float: right;
+  margin-left: 20px;
+  top: 8px;
+  position: relative;
+  border-width: 0.45rem;
+}
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+  background-color: #f0f0f0;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 30px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 0.3rem;
+  border: 1px solid #aeaeae;
+}
+
+.react-datepicker__year-dropdown:hover,
+.react-datepicker__month-dropdown:hover,
+.react-datepicker__month-year-dropdown:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-dropdown--scrollable,
+.react-datepicker__month-dropdown--scrollable,
+.react-datepicker__month-year-dropdown--scrollable {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.react-datepicker__year-option,
+.react-datepicker__month-option,
+.react-datepicker__month-year-option {
+  line-height: 20px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__year-option:first-of-type,
+.react-datepicker__month-option:first-of-type,
+.react-datepicker__month-year-option:first-of-type {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:last-of-type,
+.react-datepicker__month-option:last-of-type,
+.react-datepicker__month-year-option:last-of-type {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  background-color: #ccc;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-option--selected,
+.react-datepicker__month-option--selected,
+.react-datepicker__month-year-option--selected {
+  position: absolute;
+  left: 15px;
+}
+
+.react-datepicker__close-icon {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.react-datepicker__close-icon::after {
+  background-color: #216ba5;
+  border-radius: 50%;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  content: "\00d7";
+  cursor: pointer;
+  font-size: 12px;
+  height: 16px;
+  width: 16px;
+  line-height: 1;
+  margin: -8px auto 0;
+  padding: 2px;
+  position: absolute;
+  right: 7px;
+  text-align: center;
+  top: 50%;
+}
+
+.react-datepicker__today-button {
+  background: #f0f0f0;
+  border-top: 1px solid #aeaeae;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  clear: left;
+}
+
+.react-datepicker__portal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 2147483647;
+}
+
+.react-datepicker__portal .react-datepicker__day-name,
+.react-datepicker__portal .react-datepicker__day,
+.react-datepicker__portal .react-datepicker__time-name {
+  width: 3rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 400px), (max-height: 550px) {
+  .react-datepicker__portal .react-datepicker__day-name,
+  .react-datepicker__portal .react-datepicker__day,
+  .react-datepicker__portal .react-datepicker__time-name {
+    width: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.react-datepicker__portal .react-datepicker__current-month,
+.react-datepicker__portal .react-datepicker-time__header {
+  font-size: 1.44rem;
+}
+
+.react-datepicker__portal .react-datepicker__navigation {
+  border: 0.81rem solid transparent;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous--disabled, .react-datepicker__portal .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next {
+  border-left-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next--disabled, .react-datepicker__portal .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+</style><style type="text/css">/* Common, default styles for the notification box */
+
+.s-alert-box,
+.s-alert-box * {
+    box-sizing: border-box;
+}
+
+.s-alert-box {
+    position: fixed;
+    background: rgba(42,45,50,0.85);
+    padding: 22px;
+    line-height: 1.4;
+    z-index: 1000;
+    pointer-events: none;
+    color: rgba(250,251,255,0.95);
+    font-size: 100%;
+    font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+    max-width: 300px;
+    -webkit-transition: top .4s, bottom .4s;
+    transition: top .4s, bottom .4s;
+}
+
+.s-alert-box.s-alert-show {
+    pointer-events: auto;
+}
+
+.s-alert-box a {
+    color: inherit;
+    opacity: 0.7;
+    font-weight: 700;
+}
+
+.s-alert-box a:hover,
+.s-alert-box a:focus {
+    opacity: 1;
+}
+
+.s-alert-box p {
+    margin: 0;
+}
+
+.s-alert-box.s-alert-show,
+.s-alert-box.s-alert-visible {
+    pointer-events: auto;
+}
+
+.s-alert-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    overflow: hidden;
+    text-indent: 100%;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.s-alert-close:hover,
+.s-alert-close:focus {
+    outline: none;
+}
+
+.s-alert-close::before,
+.s-alert-close::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+}
+
+.s-alert-close:hover::before,
+.s-alert-close:hover::after {
+    background: #fff;
+}
+
+.s-alert-close::before {
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.s-alert-close::after {
+    -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+/* positions */
+
+.s-alert-bottom-left {
+    top: auto;
+    right: auto;
+    bottom: 30px;
+    left: 30px;
+}
+.s-alert-top-left {
+    top: 30px;
+    right: auto;
+    bottom: auto;
+    left: 30px;
+}
+.s-alert-top-right {
+    top: 30px;
+    right: 30px;
+    bottom: auto;
+    left: auto;
+}
+.s-alert-bottom-right { /*default*/
+    top: auto;
+    right: 30px;
+    bottom: 30px;
+    left: auto;
+}
+.s-alert-bottom {
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+}
+.s-alert-top {
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+}
+
+/* conditions */
+
+.s-alert-info {
+    background: #00A2D3;
+    color: #fff;
+}
+.s-alert-success {
+    background: #27AE60;
+    color: #fff;
+}
+.s-alert-warning {
+    background: #F1C40F;
+    color: #fff;
+}
+.s-alert-error {
+    background: #E74C3C;
+    color: #fff;
+}
+
+[class^="s-alert-effect-"].s-alert-hide,
+[class*=" s-alert-effect-"].s-alert-hide {
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+/* height measurement helper */
+.s-alert-box-height {
+    visibility: hidden;
+    position: fixed;
+}
+</style><style type="text/css">/* Jelly */
+
+.s-alert-effect-jelly a {
+    color: #fff;
+}
+
+.s-alert-effect-jelly a:hover,
+.s-alert-effect-jelly a:focus {
+    color: #fff;
+}
+
+.s-alert-effect-jelly .s-alert-close::before,
+.s-alert-effect-jelly .s-alert-close::after {
+    background: #fff;
+}
+
+.s-alert-effect-jelly .s-alert-close:hover::before,
+.s-alert-effect-jelly .s-alert-close:hover::after {
+    background: #fff;
+}
+
+.s-alert-effect-jelly.s-alert-show {
+    -webkit-animation-name: animJelly;
+    animation-name: animJelly;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.s-alert-effect-jelly.s-alert-hide {
+    -webkit-animation-name: animFade;
+    animation-name: animFade;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+@-webkit-keyframes animFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes animFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Generated with Bounce.js. Edit at http://goo.gl/6iLZu5 */
+
+@-webkit-keyframes animJelly {
+    0% { -webkit-transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    2.083333% { -webkit-transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    4.166667% { -webkit-transform: matrix3d(0.81071, 0, 0, 0, 0, 0.84545, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.81071, 0, 0, 0, 0, 0.84545, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    6.25% { -webkit-transform: matrix3d(0.86808, 0, 0, 0, 0, 0.9286, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.86808, 0, 0, 0, 0, 0.9286, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    8.333333% { -webkit-transform: matrix3d(0.92038, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.92038, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    10.416667% { -webkit-transform: matrix3d(0.96482, 0, 0, 0, 0, 1.05202, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.96482, 0, 0, 0, 0, 1.05202, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    12.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.08204, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1.08204, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    14.583333% { -webkit-transform: matrix3d(1.02563, 0, 0, 0, 0, 1.09149, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.02563, 0, 0, 0, 0, 1.09149, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    16.666667% { -webkit-transform: matrix3d(1.04227, 0, 0, 0, 0, 1.08453, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.04227, 0, 0, 0, 0, 1.08453, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    18.75% { -webkit-transform: matrix3d(1.05102, 0, 0, 0, 0, 1.06666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.05102, 0, 0, 0, 0, 1.06666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    20.833333% { -webkit-transform: matrix3d(1.05334, 0, 0, 0, 0, 1.04355, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.05334, 0, 0, 0, 0, 1.04355, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    22.916667% { -webkit-transform: matrix3d(1.05078, 0, 0, 0, 0, 1.02012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.05078, 0, 0, 0, 0, 1.02012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    25% { -webkit-transform: matrix3d(1.04487, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.04487, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    27.083333% { -webkit-transform: matrix3d(1.03699, 0, 0, 0, 0, 0.98534, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.03699, 0, 0, 0, 0, 0.98534, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    29.166667% { -webkit-transform: matrix3d(1.02831, 0, 0, 0, 0, 0.97688, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.02831, 0, 0, 0, 0, 0.97688, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    31.25% { -webkit-transform: matrix3d(1.01973, 0, 0, 0, 0, 0.97422, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.01973, 0, 0, 0, 0, 0.97422, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    33.333333% { -webkit-transform: matrix3d(1.01191, 0, 0, 0, 0, 0.97618, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.01191, 0, 0, 0, 0, 0.97618, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    35.416667% { -webkit-transform: matrix3d(1.00526, 0, 0, 0, 0, 0.98122, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00526, 0, 0, 0, 0, 0.98122, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    37.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 0.98773, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 0.98773, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    39.583333% { -webkit-transform: matrix3d(0.99617, 0, 0, 0, 0, 0.99433, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99617, 0, 0, 0, 0, 0.99433, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    41.666667% { -webkit-transform: matrix3d(0.99368, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99368, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    43.75% { -webkit-transform: matrix3d(0.99237, 0, 0, 0, 0, 1.00413, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99237, 0, 0, 0, 0, 1.00413, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    45.833333% { -webkit-transform: matrix3d(0.99202, 0, 0, 0, 0, 1.00651, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99202, 0, 0, 0, 0, 1.00651, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    47.916667% { -webkit-transform: matrix3d(0.99241, 0, 0, 0, 0, 1.00726, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99241, 0, 0, 0, 0, 1.00726, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    50% { -webkit-transform: matrix3d(0.99329, 0, 0, 0, 0, 1.00671, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99329, 0, 0, 0, 0, 1.00671, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    52.083333% { -webkit-transform: matrix3d(0.99447, 0, 0, 0, 0, 1.00529, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99447, 0, 0, 0, 0, 1.00529, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    54.166667% { -webkit-transform: matrix3d(0.99577, 0, 0, 0, 0, 1.00346, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99577, 0, 0, 0, 0, 1.00346, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    56.25% { -webkit-transform: matrix3d(0.99705, 0, 0, 0, 0, 1.0016, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99705, 0, 0, 0, 0, 1.0016, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    58.333333% { -webkit-transform: matrix3d(0.99822, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99822, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    60.416667% { -webkit-transform: matrix3d(0.99921, 0, 0, 0, 0, 0.99884, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99921, 0, 0, 0, 0, 0.99884, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    62.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 0.99816, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 0.99816, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    64.583333% { -webkit-transform: matrix3d(1.00057, 0, 0, 0, 0, 0.99795, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00057, 0, 0, 0, 0, 0.99795, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    66.666667% { -webkit-transform: matrix3d(1.00095, 0, 0, 0, 0, 0.99811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00095, 0, 0, 0, 0, 0.99811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    68.75% { -webkit-transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99851, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99851, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    70.833333% { -webkit-transform: matrix3d(1.00119, 0, 0, 0, 0, 0.99903, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00119, 0, 0, 0, 0, 0.99903, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    72.916667% { -webkit-transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99955, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99955, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    75% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    77.083333% { -webkit-transform: matrix3d(1.00083, 0, 0, 0, 0, 1.00033, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00083, 0, 0, 0, 0, 1.00033, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    79.166667% { -webkit-transform: matrix3d(1.00063, 0, 0, 0, 0, 1.00052, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00063, 0, 0, 0, 0, 1.00052, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    81.25% { -webkit-transform: matrix3d(1.00044, 0, 0, 0, 0, 1.00058, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00044, 0, 0, 0, 0, 1.00058, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    83.333333% { -webkit-transform: matrix3d(1.00027, 0, 0, 0, 0, 1.00053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00027, 0, 0, 0, 0, 1.00053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    85.416667% { -webkit-transform: matrix3d(1.00012, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00012, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    87.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.00027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1.00027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    89.583333% { -webkit-transform: matrix3d(0.99991, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99991, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    91.666667% { -webkit-transform: matrix3d(0.99986, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99986, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    93.75% { -webkit-transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    95.833333% { -webkit-transform: matrix3d(0.99982, 0, 0, 0, 0, 0.99985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99982, 0, 0, 0, 0, 0.99985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    97.916667% { -webkit-transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99984, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99984, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+@keyframes animJelly {
+    0% { -webkit-transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    2.083333% { -webkit-transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    4.166667% { -webkit-transform: matrix3d(0.81071, 0, 0, 0, 0, 0.84545, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.81071, 0, 0, 0, 0, 0.84545, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    6.25% { -webkit-transform: matrix3d(0.86808, 0, 0, 0, 0, 0.9286, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.86808, 0, 0, 0, 0, 0.9286, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    8.333333% { -webkit-transform: matrix3d(0.92038, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.92038, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    10.416667% { -webkit-transform: matrix3d(0.96482, 0, 0, 0, 0, 1.05202, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.96482, 0, 0, 0, 0, 1.05202, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    12.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.08204, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1.08204, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    14.583333% { -webkit-transform: matrix3d(1.02563, 0, 0, 0, 0, 1.09149, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.02563, 0, 0, 0, 0, 1.09149, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    16.666667% { -webkit-transform: matrix3d(1.04227, 0, 0, 0, 0, 1.08453, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.04227, 0, 0, 0, 0, 1.08453, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    18.75% { -webkit-transform: matrix3d(1.05102, 0, 0, 0, 0, 1.06666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.05102, 0, 0, 0, 0, 1.06666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    20.833333% { -webkit-transform: matrix3d(1.05334, 0, 0, 0, 0, 1.04355, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.05334, 0, 0, 0, 0, 1.04355, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    22.916667% { -webkit-transform: matrix3d(1.05078, 0, 0, 0, 0, 1.02012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.05078, 0, 0, 0, 0, 1.02012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    25% { -webkit-transform: matrix3d(1.04487, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.04487, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    27.083333% { -webkit-transform: matrix3d(1.03699, 0, 0, 0, 0, 0.98534, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.03699, 0, 0, 0, 0, 0.98534, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    29.166667% { -webkit-transform: matrix3d(1.02831, 0, 0, 0, 0, 0.97688, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.02831, 0, 0, 0, 0, 0.97688, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    31.25% { -webkit-transform: matrix3d(1.01973, 0, 0, 0, 0, 0.97422, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.01973, 0, 0, 0, 0, 0.97422, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    33.333333% { -webkit-transform: matrix3d(1.01191, 0, 0, 0, 0, 0.97618, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.01191, 0, 0, 0, 0, 0.97618, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    35.416667% { -webkit-transform: matrix3d(1.00526, 0, 0, 0, 0, 0.98122, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00526, 0, 0, 0, 0, 0.98122, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    37.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 0.98773, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 0.98773, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    39.583333% { -webkit-transform: matrix3d(0.99617, 0, 0, 0, 0, 0.99433, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99617, 0, 0, 0, 0, 0.99433, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    41.666667% { -webkit-transform: matrix3d(0.99368, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99368, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    43.75% { -webkit-transform: matrix3d(0.99237, 0, 0, 0, 0, 1.00413, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99237, 0, 0, 0, 0, 1.00413, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    45.833333% { -webkit-transform: matrix3d(0.99202, 0, 0, 0, 0, 1.00651, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99202, 0, 0, 0, 0, 1.00651, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    47.916667% { -webkit-transform: matrix3d(0.99241, 0, 0, 0, 0, 1.00726, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99241, 0, 0, 0, 0, 1.00726, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    50% { -webkit-transform: matrix3d(0.99329, 0, 0, 0, 0, 1.00671, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99329, 0, 0, 0, 0, 1.00671, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    52.083333% { -webkit-transform: matrix3d(0.99447, 0, 0, 0, 0, 1.00529, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99447, 0, 0, 0, 0, 1.00529, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    54.166667% { -webkit-transform: matrix3d(0.99577, 0, 0, 0, 0, 1.00346, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99577, 0, 0, 0, 0, 1.00346, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    56.25% { -webkit-transform: matrix3d(0.99705, 0, 0, 0, 0, 1.0016, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99705, 0, 0, 0, 0, 1.0016, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    58.333333% { -webkit-transform: matrix3d(0.99822, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99822, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    60.416667% { -webkit-transform: matrix3d(0.99921, 0, 0, 0, 0, 0.99884, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99921, 0, 0, 0, 0, 0.99884, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    62.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 0.99816, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 0.99816, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    64.583333% { -webkit-transform: matrix3d(1.00057, 0, 0, 0, 0, 0.99795, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00057, 0, 0, 0, 0, 0.99795, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    66.666667% { -webkit-transform: matrix3d(1.00095, 0, 0, 0, 0, 0.99811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00095, 0, 0, 0, 0, 0.99811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    68.75% { -webkit-transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99851, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99851, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    70.833333% { -webkit-transform: matrix3d(1.00119, 0, 0, 0, 0, 0.99903, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00119, 0, 0, 0, 0, 0.99903, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    72.916667% { -webkit-transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99955, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99955, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    75% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    77.083333% { -webkit-transform: matrix3d(1.00083, 0, 0, 0, 0, 1.00033, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00083, 0, 0, 0, 0, 1.00033, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    79.166667% { -webkit-transform: matrix3d(1.00063, 0, 0, 0, 0, 1.00052, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00063, 0, 0, 0, 0, 1.00052, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    81.25% { -webkit-transform: matrix3d(1.00044, 0, 0, 0, 0, 1.00058, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00044, 0, 0, 0, 0, 1.00058, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    83.333333% { -webkit-transform: matrix3d(1.00027, 0, 0, 0, 0, 1.00053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00027, 0, 0, 0, 0, 1.00053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    85.416667% { -webkit-transform: matrix3d(1.00012, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00012, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    87.5% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.00027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1.00027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    89.583333% { -webkit-transform: matrix3d(0.99991, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99991, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    91.666667% { -webkit-transform: matrix3d(0.99986, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99986, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    93.75% { -webkit-transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    95.833333% { -webkit-transform: matrix3d(0.99982, 0, 0, 0, 0, 0.99985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99982, 0, 0, 0, 0, 0.99985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    97.916667% { -webkit-transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99984, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99984, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}</style><style>.sortableHelper .skin-row { transform: scale(0.5785185185185185);}</style><script async="" type="text/javascript" charset="UTF-8" src="./Curve Fever Pro - 2021_files/ima3.js.download"></script></head>
+
+<body style="background: linear-gradient(to right, #0c0f1d 0%, #00232f 100%);">
+    <noscript>
+        <h1 style="color: white">You need to enable JavaScript to run this app.</h1>
+    </noscript>
+
+    <div id="app" class="loader"><div class="o-wrapper"><div><div class="background-image " style="transform: scale(0.525926) translateX(-50%);"></div><div class="social-buttons-wrap" style="transform: scale(0.525926) translateX(-50%);"><div class="social-buttons social-buttons--right"><button class="c-link social-button" id="discord"><div class="name">Discord</div><div class="icon"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/23245f2e83a006e319e9adf35bf64e099.svg" alt="social/icon-discord.svg"></span></div></button><button class="c-link social-button" id="facebook"><div class="name">Facebook</div><div class="icon"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/230df9e367569a77830f9bb154b914257.svg" alt="social/icon-facebook.svg"></span></div></button><button class="c-link social-button" id="youtube"><div class="name">YouTube</div><div class="icon"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/2d166f22b048dee54feea8e7ee96fc86e.svg" alt="social/icon-youtube.svg"></span></div></button><button class="c-link social-button" id="twitter"><div class="name">Twitter</div><div class="icon"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/21c137c392b71cea23511c2cb21eeee53.svg" alt="social/icon-twitter.svg"></span></div></button><a class="c-link--white" id="change_consent" href="https://curvefever.pro/#">Change Consent</a><img class="rotating-banner" src="./Curve Fever Pro - 2021_files/289862795a6754dfc7d2345d5a7336286.png"></div></div><header class="topbar" style="transform: translateX(-50%) scale(0.525926); display: block;"><div class="content"><div class="right"><div class="user-wrap"><div class="c-user 
+                 u-pointer 
+                "><div class="league-icon c-user__badge"><div class="league-avatar"><span class="avatar-letter">V</span><span class="avatar-level">2</span></div><div class="border"><img class="league-border" src="./Curve Fever Pro - 2021_files/2fcc4d7e4a70a8c183d120e85dbf2cafb.svg"><img class="league-stars" src="./Curve Fever Pro - 2021_files/20f17f7abe9fdc69b861347cb02de984a.svg"></div></div><div class="c-user__right"><div class="c-user__name"><span class="user-status-icons"></span>Vampiren#44407<span class="c-icon c-user__triangle"><img src="./Curve Fever Pro - 2021_files/28b2b89e18895ffe8fe440a2e6b8aeac2.svg" alt="icon-triangle.svg"></span></div></div></div><div class="c-currency-display"><div class="currency currency--gems interactable"><span>0</span> <span class="c-icon"><img src="./Curve Fever Pro - 2021_files/215ce1d8f2d55dd10283509c51dc1cf0f.svg" alt="gem.svg"></span></div></div></div><div class="topbar-button battlepass battlepass--free"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/22d30546afdd9c745f755feb0d2707d52.svg" alt="topbar/icon-topbar-battlepass.svg"></span>Battle pass</div><div class="topbar-button xp"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/2038b738744fb13b6e97a919be2f3e118.svg" alt="topbar/icon-topbar-xp.svg"></span>XP</div><div class="topbar-button crates"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/23b9126e4742db9973ce45277aa2369e7.png" alt="topbar/icon-topbar-crates.png"></span>Crates <span class="counter">0/4</span></div><div class="topbar-button inventory"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/254d7e2e695b55e694e2e14736a1a03f5.svg" alt="shop/icon-skins.svg"></span>Locker</div><div class="topbar-button leaderboard"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/27a058fa57de1efbc0eb2491a84f62547.svg" alt="icon-rank-points.svg"></span>Top 100</div><div class="topbar-button shop"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/245527174e641ab1198fee946f5424492.svg" alt="topbar/icon-topbar-shop.svg"></span>Shop</div></div></div></header><div class="chat-panel " style="transform: translateX(-50%) scale(0.525926);"><div class="social"><div class="chat-panel__tabs"><div class="dynamic-tabs"><div data-tippy="" data-original-title="Start new private chat" style="display: inline;"><div class="scroll scroll--plus"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/266d88c772496a3320a9423ce85879819.svg" alt="icon-plus.svg"></span></div></div><div class="scroll-content"><div class="scroll-content-inner" style="transform: translateY(0px);"></div></div><div class="scroll scroll--down scroll--disabled"><div class="notification-dot notification-dot--hidden"></div><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/27ea5f695d50c34453576efc08f49d14d.svg" alt="icon-scrolllist.svg"></span></div></div><div class="static-tabs"><div class="
+                tab 
+                tab--find_friends 
+                tab--find_friends--inactive 
+                tab--
+            "><div data-tippy="" data-original-title="Find new friends" style="display: inline;"><div class="tab-content"><div class="notification-dot notification-dot--hidden"></div><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/28f97c6763420e40869a41290ad003322.svg" alt="icon-find-friends.svg"></span></div></div></div><div class="
+                tab 
+                tab--friends 
+                tab--friends--inactive 
+                tab--
+            "><div data-tippy="" data-original-title="Friends" style="display: inline;"><div class="tab-content"><div class="notification-dot notification-dot--hidden"></div><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/2e25af1f451c6d5d57ae1112d671437ed.svg" alt="icon-friendlist.svg"></span></div></div></div><div class="
+                tab 
+                tab--global_chat 
+                tab--global_chat--active 
+                tab--
+            "><div data-tippy="" data-original-title="Global chat" style="display: inline;"><div class="tab-content"><div class="notification-dot notification-dot--hidden"></div><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/27053d43d77c30f3a29a27c3d0c25099c.svg" alt="icon-global.svg"></span></div></div></div><div class="
+                tab 
+                tab--group_chat 
+                tab--group_chat--inactive 
+                tab--
+             tab--disabled"><div data-tippy="" data-original-title="Match chat" style="display: inline;"><div class="tab-content"><div class="notification-dot notification-dot--hidden"></div><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/2b5650b722c39a5e6d34b31dca6a5c3df.svg" alt="icon-groupchat.svg"></span></div></div></div></div></div><div class="panel"><div class="panel--globalchat-overlay globalchat-overlay"><div class="panel-top"><div class="panel-header panel-header--global_chat"><div class="title">Global chat</div></div><div class="panel-content"><div class="match-count-info">Play 9 more matches<br>to join this channel!</div></div></div><div class="panel-input panel-input--disabled"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/25566ff2c52ce6ce475b6454371c20a49.svg" alt="icon-join.svg"></span><span class="label">Join this channel</span></div></div></div></div></div><main class="c-main " style="transform: scale(0.525926) translateX(-50%);"><section><div class="main-menu"><div class="main-menu__content"><div class="menu side-menu"><button class="c-menu-button"><div class="nav-button color-0"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/209e0968bf371dc79869e81cb9ea0aa39.svg" alt="icon-next.svg"></span></div><div class="title"><span>QUICKPLAY</span></div></button><button class="c-menu-button"><div class="nav-button color-1"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/209e0968bf371dc79869e81cb9ea0aa39.svg" alt="icon-next.svg"></span></div><div class="title"><span>JOIN MATCH</span></div></button><button class="c-menu-button"><div class="nav-button color-2"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/209e0968bf371dc79869e81cb9ea0aa39.svg" alt="icon-next.svg"></span></div><div class="title"><span>CREATE MATCH</span></div></button></div><div class="community" style="grid-template-areas: &quot;a a c&quot; &quot;a a c&quot; &quot;b d c&quot; &quot;e d c&quot;;"><div class="community-box image-box " id="news" style="grid-area: a / a / a / a;"><div class="box-content"><img src="./Curve Fever Pro - 2021_files/e9ff7e2967cbc4ac7d245614fccb154bf92a4b17.png" class="image "><div class="buttons"><button class="c-button generic-button generic-button--primary community-button">CHECK IT OUT!</button></div></div></div><div class="community-box event-box " id="event" style="grid-area: a / a / a / a;"></div><div class="community-box changelog-box " id="changelog" style="grid-area: b / b / b / b;"><div class="box-content"><img src="./Curve Fever Pro - 2021_files/2c6164212c8bb37f88ef6dd9d68f9fd0f.png" class="background-img"><div class="title">LATEST UPDATE!</div><div class="version">Curve Fever Pro Version 2.3.0</div><button class="c-link c-link c-link--white">Changelog</button></div></div><div class="community-box discourse-box " id="discourse" style="grid-area: c / c / c / c;"><div class="box-content"><div class="title">COMMUNITY FEED</div><div class="topics"><a href="https://forum.curvefever.pro/t/counter-a-classic-forum-game/11512/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/4834_2.png" class="avatar" title="Redi"></div><div class="center"><div class="topic-title">Counter | A classic forum game</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">1953</div></a><a href="https://forum.curvefever.pro/t/ban-the-person-above-you/2266/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/45.png" class="avatar" title="anon47800002"></div><div class="center"><div class="topic-title">Ban the person above you!</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">3009</div></a><a href="https://forum.curvefever.pro/t/ingame-community-section-submissions/1424/" target="_blank" class="topic category-14"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/3431_2.png" class="avatar" title="NoFlavor"></div><div class="center"><div class="topic-title">Ingame community section submissions</div><div class="topic-category"><span class="icon" style="color: rgb(18, 168, 157);">■</span><span class="name">Community Spotlight</span></div></div><div class="right">18</div></a><a href="https://forum.curvefever.pro/t/severs-down/15325/" target="_blank" class="topic category-14"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8419_2.png" class="avatar" title="XTRACHIP"></div><div class="center"><div class="topic-title">Severs down?</div><div class="topic-category"><span class="icon" style="color: rgb(18, 168, 157);">■</span><span class="name">Community Spotlight</span></div></div><div class="right">9</div></a><a href="https://forum.curvefever.pro/t/what-is-your-favorite-game-s/8068/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/3863_2.png" class="avatar" title="Slugcat"></div><div class="center"><div class="topic-title">What is your favorite game(s)?</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">58</div></a><a href="https://forum.curvefever.pro/t/im-back-yay/15249/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/45(1).png" class="avatar" title="nib"></div><div class="center"><div class="topic-title">Im back yay</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">5</div></a><a href="https://forum.curvefever.pro/t/is-it-just-me-or-is-the-update-not-useful/15333/" target="_blank" class="topic category-9"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/7743_2.png" class="avatar" title="QTips1x"></div><div class="center"><div class="topic-title">Is it just me or is the update not useful</div><div class="topic-category"><span class="icon" style="color: rgb(247, 148, 29);">■</span><span class="name">Feedback</span></div></div><div class="right">3</div></a><a href="https://forum.curvefever.pro/t/whats-your-favourite-anime/11812/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/5326_2.png" class="avatar" title="QUARAY123"></div><div class="center"><div class="topic-title">Whats your favourite anime?</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">57</div></a><a href="https://forum.curvefever.pro/t/best-players-of-cfpro-wall-of-glory/4316/" target="_blank" class="topic category-14"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8617_2.png" class="avatar" title="theangelov"></div><div class="center"><div class="topic-title">Best players of CFPro - Wall of Glory 🏆</div><div class="topic-category"><span class="icon" style="color: rgb(18, 168, 157);">■</span><span class="name">Community Spotlight</span></div></div><div class="right">556</div></a><a href="https://forum.curvefever.pro/t/curve-fever-blocked/8536/" target="_blank" class="topic category-7"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/45(2).png" class="avatar" title="YT-AlexRTV"></div><div class="center"><div class="topic-title">Curve Fever Blocked</div><div class="topic-category"><span class="icon" style="color: rgb(158, 184, 59);">■</span><span class="name">Help</span></div></div><div class="right">20</div></a><a href="https://forum.curvefever.pro/t/finish-the-lyrics/15245/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/7743_2.png" class="avatar" title="QTips1x"></div><div class="center"><div class="topic-title">Finish the lyrics</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">15</div></a><a href="https://forum.curvefever.pro/t/finish-the-sentence/10379/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/4522_2.png" class="avatar" title="Qwaza"></div><div class="center"><div class="topic-title">Finish The Sentence</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">440</div></a><a href="https://forum.curvefever.pro/t/where-are-you-from/9761/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8502_2.png" class="avatar" title="Shen"></div><div class="center"><div class="topic-title">Where are you from?</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">139</div></a><a href="https://forum.curvefever.pro/t/birthday-topic/15053/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/2363_2.png" class="avatar" title="Alpha"></div><div class="center"><div class="topic-title">Birthday Topic</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">28</div></a><a href="https://forum.curvefever.pro/t/teams-tournament/15229/" target="_blank" class="topic category-14"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8419_2.png" class="avatar" title="XTRACHIP"></div><div class="center"><div class="topic-title">Teams tournament</div><div class="topic-category"><span class="icon" style="color: rgb(18, 168, 157);">■</span><span class="name">Community Spotlight</span></div></div><div class="right">6</div></a><a href="https://forum.curvefever.pro/t/ideas-new-turret-buffs-more-powerups-and-new-ranked-system/14743/" target="_blank" class="topic category-14"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8185_2.png" class="avatar" title="Trax"></div><div class="center"><div class="topic-title">(Ideas) New Turret Buffs, More Powerups and New Ranked System</div><div class="topic-category"><span class="icon" style="color: rgb(18, 168, 157);">■</span><span class="name">Community Spotlight</span></div></div><div class="right">31</div></a><a href="https://forum.curvefever.pro/t/i-m-the-only-ipad-player-that-reached-gm/15294/" target="_blank" class="topic category-14"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8419_2.png" class="avatar" title="XTRACHIP"></div><div class="center"><div class="topic-title">I’m the only iPad player that reached gm</div><div class="topic-category"><span class="icon" style="color: rgb(18, 168, 157);">■</span><span class="name">Community Spotlight</span></div></div><div class="right">18</div></a><a href="https://forum.curvefever.pro/t/realy-big-lags-on-30-09-2021/15290/" target="_blank" class="topic category-10"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/8614_2.png" class="avatar" title="MrBrelphox"></div><div class="center"><div class="topic-title">Realy big lags on 30.09.2021</div><div class="topic-category"><span class="icon" style="color: rgb(191, 30, 46);">■</span><span class="name">Bugs</span></div></div><div class="right">21</div></a><a href="https://forum.curvefever.pro/t/sym-share-your-music/2375/" target="_blank" class="topic category-11"><div class="left"><img alt="" width="45" height="45" src="./Curve Fever Pro - 2021_files/45.png" class="avatar" title="anon47800002"></div><div class="center"><div class="topic-title">SYM - Share Your Music!</div><div class="topic-category"><span class="icon" style="color: rgb(179, 181, 180);">■</span><span class="name">Off Topic</span></div></div><div class="right">177</div></a></div><div class="footer"><a href="https://forum.curvefever.pro/" target="_blank">Official Curve Fever Pro forum</a></div></div></div><div class="community-box video-box full-image" id="featured-video" style="grid-area: d / d / d / d;"><div class="box-content"><img src="./Curve Fever Pro - 2021_files/e4ba9204ad39260c2c02be88de31b7d146b37676.png" class="image u-pointer"><div class="buttons"><a href="https://forum.curvefever.pro/submit-video" target="_blank" class="generic-button community-button">SUBMIT YOUR VIDEO</a></div></div></div><div class="community-box image-box " id="newsletter" style="grid-area: e / e / e / e;"><div class="box-content"><img src="./Curve Fever Pro - 2021_files/2375f36344923d8f4a1e11fb666a999c5.png" class="image "><div class="right-content newsletter"><b>CF NEWSLETTER</b><div class="description">Be the first to know about<br>Curve Fever related news:</div><button class="c-link c-link c-link--white c-link__text">Subscribe here</button></div></div></div></div></div></div></section><div class="top-right-buttons"><div data-tippy="" data-original-title="Open settings" style="display: inline;"><button class="c-button a-button c-button--transparent settings"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/29ff1fab88a1db31582c4b225d924dd69.svg" alt="icon-settings.svg"></span></button></div><div data-tippy="" data-original-title="Toggle Fullscreen" style="display: inline;"><button class="c-button a-button c-button--transparent fullscreen"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/20c9e26bdb5135e8726d8c1219e5835f3.svg" alt="fullscreen.svg"></span></button></div><div data-tippy="" data-original-title="Mute music" style="display: inline;"><button class="c-button a-button c-button--transparent music"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/229456ab754b43b7fe5c8da33f40ff17c.svg" alt="icon-music.svg"></span></button></div><div data-tippy="" data-original-title="Mute sound effects" style="display: inline;"><button class="c-button a-button c-button--transparent sfx"><span class="c-icon"><img src="./Curve Fever Pro - 2021_files/22e525ac321c516234bf8848dd73b1adb.svg" alt="icon-sfx.svg"></span></button></div></div></main><div class="fullscreen-ad-container" style="display: none; pointer-events: none;"><div id="preroll"></div></div><div class="popup-overlay" style="transform: scale(0.525926) translateX(-50%); display: none; pointer-events: initial;"></div><div class="flying-elements-container" style="transform: scale(0.525926) translateX(-50%);"></div><div class="debug-logs"></div></div><div><div class="s-alert-wrapper"></div><div class="public-announcements" style="transform: scale(0.525926) translateX(-50%); display: none;"><div class="content"></div></div></div></div></div>
+    <img src="./Curve Fever Pro - 2021_files/cfpro-logo.svg" class="loader-image">
+
+    <div class="orientation-warning" id="orientation-warning" style="display: none; opacity: 0;">
+        <div class="content">
+            <div class="message">
+                The game should be played in landscape mode.<br>
+                <span class="instructions">Please flip your device.</span>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="./Curve Fever Pro - 2021_files/cfpro.58e55c5add2ee486d44a.js.download"></script><style></style><script src="./Curve Fever Pro - 2021_files/api.js.download" async=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6a0d6f6e58b0c17f',m:'7kh7GQcq4YqX3AX2s5jPh5FZv0put9RuAr.j5c_dJ6U-1634682462-0-AaymKIpJsSmuiP0hK+DUbHms8cwqoESUBYKaAhqkdDwftQzZipTeHQc0Pi1untQVrikl92fH2Vw5JRIFCho1603ru62VTIPu9oKVkdSXsZlCZftm5DF04TmTTV8npDa4yA==',s:[0x879b33f111,0xffa08592d1],u:'/cdn-cgi/challenge-platform/h/b'}})();</script>
+
+</body></html>
